@@ -1,6 +1,6 @@
-const menuDiv = document.querySelector(".menu-div");
-const openLink = document.querySelector(".open-link");
-const closeLink = document.querySelector(".close-link");
+const menuDiv = document.querySelector(".menu-div"),
+  openLink = document.querySelector(".open-link"),
+  closeLink = document.querySelector(".close-link");
 
 openLink.addEventListener("click", () => {
   menuDiv.classList.add("active");
