@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 
   <title>Frontend Mentor | News homepage</title>
 
@@ -22,11 +22,23 @@
 
     <nav>
       <div class="logo-div">
-        <img src="./assets/images/logo.svg" alt="">
+        <a href="#"><img src="./assets/images/logo.svg" alt=""></a>
+      </div>
+      <div class="open">
+        <a class="open-link" href="#">
+          <img src="./assets/images/icon-menu.svg" alt="">
+        </a>
       </div>
       <div class="menu-div">
+        <div class="icon-close-div">
+          <a class="close-link" href="#">
+            <img src="./assets/images/icon-menu-close.svg" alt="">
+          </a>
+        </div>
         <ul class="menu">
-          <li class="menu-item"><a class="menu-link" href="#">Home</a></li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Home</a>
+          </li>
           <li class="menu-item"><a class="menu-link" href="#">New</a></li>
           <li class="menu-item"><a class="menu-link" href="#">Popular</a></li>
           <li class="menu-item"><a class="menu-link" href="#">Trending</a></li>
@@ -40,8 +52,8 @@
   <main>
 
     <section class="prominent-section">
-      <article class="prominent-article prominent-image">
-        <img src="./assets/images/image-web-3-desktop.jpg" alt="">
+      <article class="prominent-article prominent-img">
+        <!-- <img src="./assets/images/image-web-3-desktop.jpg" alt=""> -->
       </article>
       <article class="prominent-article prominent-title">
         <h1>The Bright Future of Web 3.0?</h1>
@@ -57,15 +69,15 @@
       <article class="new-article new-header">
         <h2>New</h2>
       </article>
-      <article class="new-article">
+      <article class="new-article new-article-1">
         <h3>Hydrogen VS Electric Cars</h3>
         <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
       </article>
-      <article class="new-article">
+      <article class="new-article new-article-2">
         <h3>The Downsides of AI Artistry</h3>
         <p>What are the possible adverse effects of on-demand AI image generation?</p>
       </article>
-      <article class="new-article">
+      <article class="new-article new-article-3">
         <h3>Is VC Funding Drying Up?</h3>
         <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
       </article>
@@ -111,4 +123,5 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+<script src="./script.js"></script>
 </html>
