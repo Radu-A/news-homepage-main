@@ -45,6 +45,9 @@ h1 {
 p {
     line-height: 1.6;
 }
+a {
+    text-decoration: none;
+}
 
 /* Navbar */
 
@@ -88,9 +91,11 @@ nav {
     padding: 1rem 0;
 }
 .menu-link {
-    text-decoration: none;
     color: var(--very-dark-blue);
     font-size: 1.1rem;
+}
+.menu-link:active {
+    color: var(--soft-red);
 }
 
 .menu-div-desktop {
@@ -121,7 +126,9 @@ nav {
     border: none;
     margin-top: 1rem;
 }
-
+.prominent-description button:active {
+    background-color: var(--very-dark-blue);
+}
 /* New section */
 
 .new-section {
@@ -149,6 +156,12 @@ nav {
 .new-article-1, .new-article-2 {
     border-bottom: 1px solid var(--off-white);
 }
+.new-link {
+    color: inherit;
+}
+.new-link:active {
+    color: var(--soft-orange);
+}
 
 /* List section */
 
@@ -175,9 +188,12 @@ nav {
     font-size: 1.8rem;
     color: var(--grayish-blue);
 }
-.list-article-text h4 {
+.list-link {
     font-size: 1.1rem;
     color: var(--very-dark-blue);
+}
+.list-link:active {
+    color: var(--soft-red);
 }
 
 /* Desktop view */
@@ -214,9 +230,6 @@ nav {
     .menu-link {
         color: var(--dark-grayish-blue);
         font-size: 1rem;
-    }
-    .menu-link:active {
-        
     }
     /* Prominent section */
     .prominent-section {
